@@ -9,7 +9,6 @@ on:
   pull_request:
     branches:
       - 'master'
-      - 'development'
 
 jobs:
   runtest:
@@ -43,8 +42,12 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
+<<<<<<< HEAD
           images: nadzeyakuzmitch/is218
 
+=======
+          images: nadzeyakuzmitch/flaskproject
+>>>>>>> 6ac1831f38a9a7779c4aeeb51a54ff3ea17fffe5
 
       - name: Build and push
         uses: docker/build-push-action@v2
